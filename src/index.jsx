@@ -3,5 +3,6 @@ import ReactDOM from 'react-dom';
 import 'normalize.css';
 import 'semantic-ui-css/semantic.min.css';
 import '@babel/polyfill';
+import App from './App';
 
-ReactDOM.render(<div>Hello World</div>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

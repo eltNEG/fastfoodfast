@@ -1,0 +1,58 @@
+@import '../../styles/styles';
+
+.nav-bar.ui.menu {
+  background-color: $dark-blue;
+  border-radius: 0;
+  color: $white;
+  padding: 0 5%;
+  margin: 0;
+  a {
+    color: $white;
+  }
+  .mobile.right.menu {
+    display: none;
+  }
+  h1{
+      font-size: 1.8rem;
+  }
+}
+
+.nav-bar + :not(.main) + .footer{
+    margin-top: 80vh;
+}
+
+@include mobile {
+  .nav-bar.ui.menu {
+    .desktop.right.menu {
+      display: none;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+    .mobile.right.menu {
+      display: initial;
+      .accordion.ui {
+        position: relative;
+      }
+      a {
+        color: $dark-blue;
+      }
+    }
+    .accordion-content {
+      position: absolute;
+      padding-bottom: 0;
+      right: -4rem;
+      width: 100vw;
+      top: -1rem;
+      background-color: $dirty-white;
+      text-align: center;
+    }
+
+    i.big.icon,
+    i.big.icons {
+      font-size: 1.4rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
