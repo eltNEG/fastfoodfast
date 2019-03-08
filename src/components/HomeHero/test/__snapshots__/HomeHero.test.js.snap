@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeHero snapshot should match HomeHero.jsx snapshot 1`] = `
+<div
+  className="home-hero"
+>
+  <div
+    className="home-hero-content"
+  >
+    <div>
+      Your Next Delicious Meal is Just a Few Clicks Away
+    </div>
+    <input
+      placeholder="\\"Try Shawarma\\""
+    />
+    <button>
+      Search
+    </button>
+  </div>
+</div>
+`;

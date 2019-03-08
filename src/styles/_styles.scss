@@ -1,3 +1,26 @@
 @import '/fonts';
 @import '/colors';
 @import './functions';
+
+.main.grid.ui {
+  margin: 0;
+  .row {
+    @include zeroPaddingMargin();
+  }
+}
+
+$border-radius: 2px;
+
+%content {
+    padding: 5em;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+%fff-btn {
+    outline: 0;
+    border: 0;
+}

@@ -12,7 +12,6 @@ class NavBar extends React.Component {
     };
   }
 
-<<<<<<< HEAD
   toggleMenu = () => {
     const { active } = this.state;
     this.setState({ active: !active });
@@ -33,28 +32,6 @@ class NavBar extends React.Component {
     </Menu.Menu>
   );
 
-=======
-  renderDesktopMenu = () => (
-    <Menu.Menu className="desktop" position="right">
-      <Menu.Item>
-        <Link to={REGISTER_PATH}>
-          <div>Register</div>
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link to={LOGIN_PATH}>
-          <div>login</div>
-        </Link>
-      </Menu.Item>
-    </Menu.Menu>
-  );
-
-  toggleMenu = () => {
-    const { active } = this.state;
-    this.setState({ active: !active });
-  };
-
->>>>>>> [ft-#164048770] Implement header and footer
   renderMobileMenu = () => {
     const { active } = this.state;
     return (
@@ -64,21 +41,8 @@ class NavBar extends React.Component {
             <Icon size="big" inverted name="bars" />
           </Accordion.Title>
           <Accordion.Content as="menu" className="accordion-content" active={active}>
-<<<<<<< HEAD
             {this.renderMenuItemLink(REGISTER_PATH, 'Register')}
             {this.renderMenuItemLink(LOGIN_PATH, 'Login')}
-=======
-            <Menu.Item>
-              <Link to={REGISTER_PATH}>
-                <div>Register</div>
-              </Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link to={LOGIN_PATH}>
-                <div>login</div>
-              </Link>
-            </Menu.Item>
->>>>>>> [ft-#164048770] Implement header and footer
           </Accordion.Content>
         </Accordion>
       </Menu.Menu>
@@ -87,11 +51,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <Menu borderless className="nav-bar">
-=======
-      <Menu fixed borderless className="nav-bar">
->>>>>>> [ft-#164048770] Implement header and footer
         <Menu.Menu position="left">
           <Menu.Item>
             <Link to={HOME_PATH}>
