@@ -1,5 +1,6 @@
 dist/* 
 webpack/
 *.scss
+test/
 src/**/*.test.js
 enzyme.setup.js
