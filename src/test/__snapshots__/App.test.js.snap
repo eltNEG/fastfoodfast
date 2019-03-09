@@ -12,6 +12,18 @@ exports[`App.jsx should match snapshot 1`] = `
     />
     <Route
       component={[Function]}
+      exact={true}
+      key="register"
+      path="/register"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      key="login"
+      path="/login"
+    />
+    <Route
+      component={[Function]}
       key="not-found"
       path="*"
     />

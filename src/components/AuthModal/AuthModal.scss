@@ -1,0 +1,23 @@
+@import '../../styles/styles';
+
+.auth-modal {
+    .ui.form {
+        font-size: 1rem;
+        max-width: 28rem;
+        margin: 0 auto;
+        background-color: $white;
+        padding: 2rem;
+        .ui.button {
+            background-color: $dark-blue;
+            color: $white;
+        }
+        h2 {
+            color: $dark-blue;
+            text-align: center;
+        }
+        .ui.message {
+            text-align: center;
+        }
+    }
+
+}

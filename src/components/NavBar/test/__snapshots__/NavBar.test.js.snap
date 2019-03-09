@@ -28,9 +28,13 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
         replace={false}
         to="/register"
       >
-        <div>
-          Register
-        </div>
+        <withRouter(AuthModalComponent)
+          text="Register"
+        >
+          <AuthForm
+            formType="Register"
+          />
+        </withRouter(AuthModalComponent)>
       </Link>
     </MenuItem>
     <MenuItem>
@@ -38,9 +42,13 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
         replace={false}
         to="/login"
       >
-        <div>
-          Login
-        </div>
+        <withRouter(AuthModalComponent)
+          text="Login"
+        >
+          <AuthForm
+            formType="Login"
+          />
+        </withRouter(AuthModalComponent)>
       </Link>
     </MenuItem>
   </MenuMenu>
@@ -72,9 +80,13 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
             replace={false}
             to="/register"
           >
-            <div>
-              Register
-            </div>
+            <withRouter(AuthModalComponent)
+              text="Register"
+            >
+              <AuthForm
+                formType="Register"
+              />
+            </withRouter(AuthModalComponent)>
           </Link>
         </MenuItem>
         <MenuItem>
@@ -82,9 +94,13 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
             replace={false}
             to="/login"
           >
-            <div>
-              Login
-            </div>
+            <withRouter(AuthModalComponent)
+              text="Login"
+            >
+              <AuthForm
+                formType="Login"
+              />
+            </withRouter(AuthModalComponent)>
           </Link>
         </MenuItem>
       </AccordionContent>
