@@ -1,4 +1,6 @@
 # FastFoodFast-react
+[![Build Status](https://travis-ci.org/eltNEG/fastfoodfast.svg?branch=develop)](https://travis-ci.org/eltNEG/fastfoodfast) [![Maintainability](https://api.codeclimate.com/v1/badges/4010f5db4414e3363d50/maintainability)](https://codeclimate.com/github/eltNEG/fastfoodfast/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4010f5db4414e3363d50/test_coverage)](https://codeclimate.com/github/eltNEG/fastfoodfast/test_coverage) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
 
 ## Project Overview
 Fast-Food-Fast is a food delivery service app for a restaurant. The project is built react and redux.
