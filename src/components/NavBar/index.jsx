@@ -3,6 +3,8 @@ import { Menu, Accordion, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './NavBar.scss';
 import { HOME_PATH, LOGIN_PATH, REGISTER_PATH } from '../../constants';
+import AuthModal from '../AuthModal';
+import AuthForm from '../AuthModal/AuthForm';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -20,7 +22,9 @@ class NavBar extends React.Component {
   renderMenuItemLink = (path, text) => (
     <Menu.Item>
       <Link to={path}>
-        <div>{text}</div>
+        <AuthModal text={text}>
+          <AuthForm formType={text} />
+        </AuthModal>
       </Link>
     </Menu.Item>
   );

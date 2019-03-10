@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthModal component should match AuthForm.jsx snapshot 1`] = `
+<Form
+  as="form"
+>
+  <h2>
+    Register a new account
+  </h2>
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="user"
+    iconPosition="left"
+    name="username"
+    onChange={[Function]}
+    placeholder="Username"
+    type="text"
+  />
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="lock"
+    iconPosition="left"
+    name="password"
+    onChange={[Function]}
+    placeholder="Password"
+    type="password"
+  />
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="lock"
+    iconPosition="left"
+    name="confirmPassword"
+    onChange={[Function]}
+    placeholder="Confirm Password"
+    type="password"
+  />
+  <Button
+    as="div"
+    fluid={true}
+    size="large"
+  >
+    Register
+  </Button>
+  <Message>
+    Already have an account?
+     
+    <Link
+      replace={false}
+      to="/login"
+    >
+      Login
+    </Link>
+  </Message>
+</Form>
+`;
+
+exports[`AuthModal component should match AuthForm.jsx snapshot 2`] = `
+<Form
+  as="form"
+>
+  <h2>
+    Log-in to your account
+  </h2>
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="user"
+    iconPosition="left"
+    name="username"
+    onChange={[Function]}
+    placeholder="Username"
+    type="text"
+  />
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="lock"
+    iconPosition="left"
+    name="password"
+    onChange={[Function]}
+    placeholder="Password"
+    type="password"
+  />
+  <Button
+    as="div"
+    fluid={true}
+    size="large"
+  >
+    Login
+  </Button>
+  <Message>
+    Do not have an account?
+     
+    <Link
+      replace={false}
+      to="/register"
+    >
+      Register
+    </Link>
+  </Message>
+</Form>
+`;
+
+exports[`AuthModal component should match AuthForm.jsx snapshot 3`] = `
+<Form
+  as="form"
+>
+  <h2>
+    Register a new account
+  </h2>
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="user"
+    iconPosition="left"
+    name="username"
+    onChange={[Function]}
+    placeholder="Username"
+    type="text"
+  />
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="lock"
+    iconPosition="left"
+    name="password"
+    onChange={[Function]}
+    placeholder="Password"
+    type="password"
+  />
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    fluid={true}
+    icon="lock"
+    iconPosition="left"
+    name="confirmPassword"
+    onChange={[Function]}
+    placeholder="Confirm Password"
+    type="password"
+  />
+  <Button
+    as="div"
+    fluid={true}
+    size="large"
+  >
+    Register
+  </Button>
+  <Message>
+    Already have an account?
+     
+    <Link
+      replace={false}
+      to="/login"
+    >
+      Login
+    </Link>
+  </Message>
+</Form>
+`;
+
+exports[`AuthModal component should match AuthModal.jsx snapshot 1`] = `
+<Modal
+  basic={true}
+  centered={true}
+  className="auth-modal"
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer={true}
+  eventPool="Modal"
+  onClose={[Function]}
+  open={true}
+  size="small"
+  trigger={
+    <div>
+      register
+    </div>
+  }
+>
+  <div />
+</Modal>
+`;
+
+exports[`AuthModal component should match AuthModal.jsx snapshot 2`] = `
+<Modal
+  basic={true}
+  centered={true}
+  className="auth-modal"
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer={true}
+  eventPool="Modal"
+  onClose={[Function]}
+  open={false}
+  size="small"
+  trigger={
+    <div>
+      register
+    </div>
+  }
+>
+  <div />
+</Modal>
+`;

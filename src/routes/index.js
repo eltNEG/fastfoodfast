@@ -9,6 +9,18 @@ export default [
     path: '/'
   },
   {
+    key: 'register',
+    component: Home,
+    exact: true,
+    path: '/register'
+  },
+  {
+    key: 'login',
+    component: Home,
+    exact: true,
+    path: '/login'
+  },
+  {
     key: 'not-found',
     component: NotFound,
     path: '*'
