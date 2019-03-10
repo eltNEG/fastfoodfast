@@ -1,6 +1,8 @@
 import React from 'react';
 import { Menu, Accordion, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 import './NavBar.scss';
 import { HOME_PATH, LOGIN_PATH, REGISTER_PATH } from '../../constants';
 import AuthModal from '../AuthModal';
@@ -65,6 +67,7 @@ class NavBar extends React.Component {
         </Menu.Menu>
         {this.renderDesktopMenu()}
         {this.renderMobileMenu()}
+        <ToastContainer autoClose={3000} />
       </Menu>
     );
   }

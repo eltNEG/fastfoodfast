@@ -7,4 +7,7 @@ const cardItems = (items, button) => items.map(item => ({
   key: item.foodid,
 }));
 
+export const setToken = token => localStorage.setItem('token', token);
+export const getToken = () => localStorage.getItem('token');
+
 export default cardItems;

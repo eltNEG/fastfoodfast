@@ -3,6 +3,8 @@
 exports[`AuthModal component should match AuthForm.jsx snapshot 1`] = `
 <Form
   as="form"
+  name="registerForm"
+  onSubmit={[Function]}
 >
   <h2>
     Register a new account
@@ -42,7 +44,10 @@ exports[`AuthModal component should match AuthForm.jsx snapshot 1`] = `
   />
   <Button
     as="div"
+    disabled={false}
     fluid={true}
+    name="register"
+    onClick={[Function]}
     size="large"
   >
     Register
@@ -63,6 +68,7 @@ exports[`AuthModal component should match AuthForm.jsx snapshot 1`] = `
 exports[`AuthModal component should match AuthForm.jsx snapshot 2`] = `
 <Form
   as="form"
+  name="loginForm"
 >
   <h2>
     Log-in to your account
@@ -91,10 +97,13 @@ exports[`AuthModal component should match AuthForm.jsx snapshot 2`] = `
   />
   <Button
     as="div"
+    disabled={true}
     fluid={true}
+    name="login"
+    onClick={[Function]}
     size="large"
   >
-    Login
+    Logging in...
   </Button>
   <Message>
     Do not have an account?
@@ -112,6 +121,8 @@ exports[`AuthModal component should match AuthForm.jsx snapshot 2`] = `
 exports[`AuthModal component should match AuthForm.jsx snapshot 3`] = `
 <Form
   as="form"
+  name="registerForm"
+  onSubmit={[Function]}
 >
   <h2>
     Register a new account
@@ -151,7 +162,10 @@ exports[`AuthModal component should match AuthForm.jsx snapshot 3`] = `
   />
   <Button
     as="div"
+    disabled={false}
     fluid={true}
+    name="register"
+    onClick={[Function]}
     size="large"
   >
     Register
