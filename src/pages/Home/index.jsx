@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import HomeHero from '../../components/HomeHero';
-import HomeContent from '../../components/HomeContent';
+import HomeContent from '../../containers/HomeContent';
 
 export default () => (
   <Grid className="main home">

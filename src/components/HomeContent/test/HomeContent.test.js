@@ -5,7 +5,7 @@ import BuyNowBtn from '../BuyNowButton';
 
 describe('HomeContent snapshot', () => {
   it('should match HomeContent.jsx snapshot', () => {
-    const wrapper = shallow(<HomeContent />);
+    const wrapper = shallow(<HomeContent foodItems={[]} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

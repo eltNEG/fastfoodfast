@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContentContainer HomeContentContainer Snapshot should match snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(HomeContentContainer)
+    doFetchFoods={[Function]}
+  >
+    <HomeContentContainer
+      doFetchFoods={[Function]}
+      foodItems={Array []}
+    >
+      <HomeContent
+        foodItems={Array []}
+      >
+        <div
+          className="home-content"
+        >
+          <CardGroup
+            className="food-list"
+            doubling={true}
+            items={Array []}
+            itemsPerRow={4}
+            stackable={true}
+          >
+            <div
+              className="ui doubling stackable four cards food-list"
+            />
+          </CardGroup>
+        </div>
+      </HomeContent>
+    </HomeContentContainer>
+  </Connect(HomeContentContainer)>
+</Provider>
+`;

@@ -5,3 +5,17 @@ export const NOT_FOUND_PATH = '*';
 export const REGISTER_PATH = '/register';
 
 export const LOGIN_PATH = '/login';
+
+export const { API_BASE_URL } = process.env;
+
+export const OPTIONS = {
+  headers: {
+    authorization: localStorage.getItem('authentication')
+  }
+};
+
+export const FOOD_FETCH_STATES = {
+  notFetched: 'notFetched',
+  fetching: 'fetching',
+  fetched: 'fetched'
+};

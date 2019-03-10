@@ -12,6 +12,7 @@
     "comma-dangle": 0,
     "react/button-has-type": 0,
     "react/no-did-mount-set-state": 0,
+    "no-shadow": "off",
     "require-jsdoc": [
       0,
       {
