@@ -6,5 +6,14 @@ export const getFoods = async () => {
   return response;
 };
 
+export const login = async (payload) => {
+  const response = await axios.post(`${API_BASE_URL}/auth/login`, payload);
+  return response;
+};
+
+export const register = async (payload) => {
+  const response = await axios.post(`${API_BASE_URL}/auth/signup`, payload);
+  return response;
+};
 
 export default getFoods;

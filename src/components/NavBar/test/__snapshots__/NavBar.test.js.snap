@@ -31,7 +31,7 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
         <withRouter(AuthModalComponent)
           text="Register"
         >
-          <AuthForm
+          <Connect(AuthFormComponent)
             formType="Register"
           />
         </withRouter(AuthModalComponent)>
@@ -45,7 +45,7 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
         <withRouter(AuthModalComponent)
           text="Login"
         >
-          <AuthForm
+          <Connect(AuthFormComponent)
             formType="Login"
           />
         </withRouter(AuthModalComponent)>
@@ -83,7 +83,7 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
             <withRouter(AuthModalComponent)
               text="Register"
             >
-              <AuthForm
+              <Connect(AuthFormComponent)
                 formType="Register"
               />
             </withRouter(AuthModalComponent)>
@@ -97,7 +97,7 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
             <withRouter(AuthModalComponent)
               text="Login"
             >
-              <AuthForm
+              <Connect(AuthFormComponent)
                 formType="Login"
               />
             </withRouter(AuthModalComponent)>
@@ -106,5 +106,29 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
       </AccordionContent>
     </Accordion>
   </MenuMenu>
+  <ToastContainer
+    autoClose={3000}
+    bodyClassName={null}
+    className={null}
+    closeButton={
+      <CloseButton
+        ariaLabel="close"
+      />
+    }
+    closeOnClick={true}
+    draggable={true}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    progressClassName={null}
+    progressStyle={null}
+    rtl={false}
+    style={null}
+    toastClassName={null}
+    transition={[Function]}
+  />
 </Menu>
 `;
