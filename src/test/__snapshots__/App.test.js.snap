@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App.jsx should match snapshot 1`] = `
-<div>
-  FastFoodFast
-</div>
+<BrowserRouter>
+  <NavBar />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      key="home"
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      key="not-found"
+      path="*"
+    />
+  </Switch>
+  <_default />
+</BrowserRouter>
 `;

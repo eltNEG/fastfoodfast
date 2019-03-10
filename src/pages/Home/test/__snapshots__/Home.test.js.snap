@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot should match Home.jsx snapshot 1`] = `
+<div
+  className="main home"
+>
+  Home
+</div>
+`;
