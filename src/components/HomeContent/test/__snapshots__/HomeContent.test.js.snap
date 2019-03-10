@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyNowBtn snapshot should match BuyNowBtn.jsx snapshot 1`] = `
+<button>
+  Buy Now
+</button>
+`;
+
+exports[`HomeContent snapshot should match HomeContent.jsx snapshot 1`] = `
+<div
+  className="home-content"
+>
+  <CardGroup
+    className="food-list"
+    doubling={true}
+    items={
+      Array [
+        Object {
+          "description": "Buy this now...",
+          "extra": <_default />,
+          "header": "Akara",
+          "image": "https://www.dropbox.com/s/k8iqulpg2w7nlgn/akara.jpg?raw=1",
+          "key": 15,
+          "meta": "Price: ₦1,200.00",
+        },
+        Object {
+          "description": "Buy this now...",
+          "extra": <_default />,
+          "header": "Garri",
+          "image": "https://www.dropbox.com/s/89nxf7ehakiorya/Garri-and-groundnut.jpg?raw=1",
+          "key": 16,
+          "meta": "Price: ₦1,200.00",
+        },
+        Object {
+          "description": "Buy this now...",
+          "extra": <_default />,
+          "header": "Pancake",
+          "image": "https://www.dropbox.com/s/fgt9obc0tdrx5hd/pancake.jpeg?raw=1",
+          "key": 17,
+          "meta": "Price: ₦1,200.00",
+        },
+        Object {
+          "description": "Buy this now...",
+          "extra": <_default />,
+          "header": "Shawarma",
+          "image": "https://www.dropbox.com/s/zze8nto1uiiakd5/shawarma.jpeg?raw=1",
+          "key": 18,
+          "meta": "Price: ₦1,200.00",
+        },
+      ]
+    }
+    itemsPerRow={4}
+    stackable={true}
+  />
+</div>
+`;

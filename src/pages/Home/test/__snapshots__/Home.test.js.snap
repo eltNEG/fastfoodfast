@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home snapshot should match Home.jsx snapshot 1`] = `
-<div
+<Grid
   className="main home"
 >
-  Home
-</div>
+  <GridRow>
+    <_default />
+  </GridRow>
+  <GridRow>
+    <_default />
+  </GridRow>
+</Grid>
 `;
