@@ -52,6 +52,7 @@
     "babel-loader": "^8.0.5",
     "check-prop-types": "^1.1.2",
     "clean-webpack-plugin": "^1.0.1",
+    "coveralls": "^3.0.3",
     "css-loader": "^2.1.0",
     "dotenv-webpack": "^1.7.0",
     "enzyme": "^3.9.0",
@@ -86,7 +87,8 @@
     "dev": "webpack-dev-server --config webpack/webpack.dev.js --open --hot",
     "test": "NODE_ENV=test jest --coverage",
     "lint": "./node_modules/eslint/bin/eslint.js . --ext .js,.jsx",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
     "setupFilesAfterEnv": [
