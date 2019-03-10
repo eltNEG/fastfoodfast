@@ -1,4 +1,4 @@
-const items = [
+export const items = [
   {
     foodid: 15,
     foodname: 'Akara',
@@ -21,4 +21,8 @@ const items = [
   }
 ];
 
-export default items;
+export const fetchFoodItemsResponse = {
+  data: {
+    data: { menu: items }
+  }
+};

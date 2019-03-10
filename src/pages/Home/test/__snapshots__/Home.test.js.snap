@@ -8,7 +8,7 @@ exports[`Home snapshot should match Home.jsx snapshot 1`] = `
     <_default />
   </GridRow>
   <GridRow>
-    <_default />
+    <Connect(HomeContentContainer) />
   </GridRow>
 </Grid>
 `;
