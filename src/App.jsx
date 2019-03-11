@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import routes from './routes';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import RouteManager from './components/RouteManager';
 
 const App = () => (
   <Router>
@@ -10,11 +11,13 @@ const App = () => (
       <NavBar />
       <Switch>
         {routes.map(route => (
-          <Route
+          <RouteManager
             key={route.key}
             path={route.path}
             component={route.component}
             exact={route.exact}
+            redirectTo={route.redirectTo}
+            routeType={route.routeType}
           />
         ))}
       </Switch>

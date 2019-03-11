@@ -10,7 +10,8 @@ const {
   REGISTER_ISLOADING,
   REGISTER_SUCCESS,
   LOGIN_FAILURE,
-  REGISTER_FAILURE
+  REGISTER_FAILURE,
+  GET_USER_SUCCESS,
 } = actionTypes;
 
 const loginSuccess = userData => ({
@@ -55,4 +56,13 @@ export const doRegister = payload => async (dispatch) => {
     toast.error('Registration failed');
     dispatch(registerFailure());
   }
+};
+
+const getUserSuccess = userData => ({
+  type: GET_USER_SUCCESS,
+  payload: userData
+});
+
+export const doGetUser = user => async (dispatch) => {
+  dispatch(getUserSuccess(user));
 };

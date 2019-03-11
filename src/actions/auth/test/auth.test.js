@@ -1,7 +1,7 @@
 import 'jest-localstorage-mock';
 import sinon from 'sinon';
 import moxios from 'moxios';
-import { doLogin, doRegister } from '..';
+import { doLogin, doRegister, doGetUser } from '..';
 import actionTypes from '../actionTypes';
 import * as axios from '../../../helpers/axiosCall';
 import { items, fetchFoodItemsResponse } from '../../../mocks';
@@ -34,6 +34,13 @@ describe('authActions', () => {
       const dispatch = jest.fn();
       await doRegister()(dispatch);
       expect(dispatch).toBeCalledTimes(2);
+    });
+  });
+  describe('doGetUser', () => {
+    it('should gset user', async () => {
+      const dispatch = jest.fn();
+      await doGetUser({})(dispatch);
+      expect(dispatch).toBeCalledTimes(1);
     });
   });
 });

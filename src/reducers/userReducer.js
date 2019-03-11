@@ -7,7 +7,8 @@ const {
   REGISTER_ISLOADING,
   REGISTER_SUCCESS,
   LOGIN_FAILURE,
-  REGISTER_FAILURE
+  REGISTER_FAILURE,
+  GET_USER_SUCCESS
 } = actionTypes;
 
 const { user } = initialState;
@@ -28,13 +29,15 @@ export default (state = user, action) => {
       return {
         ...state,
         ...action.payload,
-        loginIsLoading: false
+        loginIsLoading: false,
+        isAuthenticated: true
       };
     case REGISTER_SUCCESS:
       return {
         ...state,
         ...action.payload,
-        registerIsLoading: false
+        registerIsLoading: false,
+        isAuthenticated: true
       };
     case LOGIN_FAILURE:
       return {
@@ -45,6 +48,11 @@ export default (state = user, action) => {
       return {
         ...state,
         registerIsLoading: false
+      };
+    case GET_USER_SUCCESS:
+      return {
+        ...state,
+        isAuthenticated: true
       };
     default:
       return state;
