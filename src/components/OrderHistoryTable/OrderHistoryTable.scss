@@ -1,0 +1,13 @@
+@import '../../styles/styles';
+
+.order-history.main{
+    padding: 6rem;
+    height: 49.5rem;
+}
+
+@include mobile {
+    .order-history.main {
+        padding: 2rem;
+        height: 43.8rem;
+    }
+}
