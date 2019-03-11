@@ -6,11 +6,13 @@ export const REGISTER_PATH = '/register';
 
 export const LOGIN_PATH = '/login';
 
+export const ORDER_HISTORY = '/order-history';
+
 export const { API_BASE_URL } = process.env;
 
 export const OPTIONS = {
   headers: {
-    authorization: localStorage.getItem('authentication')
+    authorization: localStorage.getItem('token')
   }
 };
 

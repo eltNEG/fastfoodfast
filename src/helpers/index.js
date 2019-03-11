@@ -1,11 +1,11 @@
 import jwtDecode from 'jwt-decode';
 
-const cardItems = (items, button) => items.map(item => ({
+const cardItems = (items, renderButton) => items.map(item => ({
   image: item.url,
   header: item.foodname,
   description: 'Buy this now...',
   meta: 'Price: ₦1,200.00',
-  extra: button,
+  extra: renderButton(item.foodid),
   key: item.foodid
 }));
 

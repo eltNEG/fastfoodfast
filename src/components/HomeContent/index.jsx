@@ -5,6 +5,8 @@ import './HomeContent.scss';
 import cardItems from '../../helpers';
 import BuyNowBtn from './BuyNowButton';
 
+const renderBuyButton = foodId => <BuyNowBtn foodId={foodId} />;
+
 const HomeContent = ({ foodItems }) => (
   <div className="home-content">
     <Card.Group
@@ -12,7 +14,7 @@ const HomeContent = ({ foodItems }) => (
       doubling
       className="food-list"
       itemsPerRow={4}
-      items={cardItems(foodItems, <BuyNowBtn />)}
+      items={cardItems(foodItems, renderBuyButton)}
     />
   </div>
 );

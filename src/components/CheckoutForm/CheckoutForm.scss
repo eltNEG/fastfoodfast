@@ -1,0 +1,23 @@
+@import '../../styles/styles';
+.checkout {
+  padding: 6rem;
+  height: 84.4vh;
+  .ui.equal.width.grid > div {
+    min-width: 20rem;
+    max-height: 28rem;
+  }
+  .ui.button{
+      @extend %dark-blue-btn;
+  }
+}
+
+.checkout + .footer {
+  bottom: 0;
+}
+
+@include mobile {
+  .checkout {
+    height: 115vh;
+    padding: 2rem
+  }
+}

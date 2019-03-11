@@ -23,7 +23,10 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
     className="desktop"
     position="right"
   >
-    <MenuItem>
+    <MenuItem
+      as="div"
+      onClick={null}
+    >
       <Link
         replace={false}
         to="/register"
@@ -37,7 +40,10 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
         </withRouter(AuthModalComponent)>
       </Link>
     </MenuItem>
-    <MenuItem>
+    <MenuItem
+      as="div"
+      onClick={null}
+    >
       <Link
         replace={false}
         to="/login"
@@ -75,7 +81,10 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
         as="menu"
         className="accordion-content"
       >
-        <MenuItem>
+        <MenuItem
+          as="div"
+          onClick={null}
+        >
           <Link
             replace={false}
             to="/register"
@@ -89,7 +98,10 @@ exports[`NavBar.jsx NavBar snapshot should match NavBar.jsx snapshot 1`] = `
             </withRouter(AuthModalComponent)>
           </Link>
         </MenuItem>
-        <MenuItem>
+        <MenuItem
+          as="div"
+          onClick={null}
+        >
           <Link
             replace={false}
             to="/login"

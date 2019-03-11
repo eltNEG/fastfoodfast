@@ -24,3 +24,8 @@ $border-radius: 2px;
     outline: 0;
     border: 0;
 }
+
+%dark-blue-btn {
+  background-color: $dark-blue;
+  color: $white;
+}
