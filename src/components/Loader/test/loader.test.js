@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../App';
+import RedirectLoader from '..';
 
-describe('App.jsx', () => {
+describe('RedirectLoader', () => {
   it('should match snapshot', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<RedirectLoader />);
     expect(wrapper).toMatchSnapshot();
   });
 });

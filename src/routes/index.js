@@ -12,13 +12,17 @@ export default [
     key: 'register',
     component: Home,
     exact: true,
-    path: '/register'
+    path: '/register',
+    routeType: 'unAuthenticated',
+    redirectTo: '/'
   },
   {
     key: 'login',
     component: Home,
     exact: true,
-    path: '/login'
+    path: '/login',
+    routeType: 'unAuthenticated',
+    redirectTo: '/'
   },
   {
     key: 'not-found',

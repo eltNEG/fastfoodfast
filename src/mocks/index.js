@@ -21,6 +21,14 @@ export const items = [
   }
 ];
 
+export const jwtToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjY1LCJ1c2VybmFtZSI6InVzZXI1NTUiLCJyb2xlIjoidXNlciIsImlhdCI6MTU1MjI1MDYyMSwiZXhwIjoxNTUyMjU0MjIxfQ.BYSeeU8xgPdgt77ayxm2vnC8CXA1gJRfzjTJoXREEQ4';
+
+export const user = {
+  userid: 65,
+  username: 'user555',
+  role: 'user'
+};
+
 export const fetchFoodItemsResponse = {
   data: {
     data: { menu: items }
