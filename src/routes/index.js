@@ -1,6 +1,7 @@
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import Checkout from '../pages/Checkout';
+import OrderHistory from '../pages/OrderHistory';
 
 export default [
   {
@@ -41,7 +42,15 @@ export default [
     exact: true,
     path: '/checkout/:foodId',
     routeType: 'authenticated',
-    redirectTo: '/'
+    redirectTo: '/login'
+  },
+  {
+    key: 'order-history',
+    component: OrderHistory,
+    exact: true,
+    path: '/order-history',
+    routeType: 'authenticated',
+    redirectTo: '/login'
   },
   {
     key: 'not-found',

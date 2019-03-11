@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound snapshot should match NotFound.jsx snapshot 1`] = `
-<div>
-  Page Not Found!
+<div
+  className="page-not-found-container"
+>
+  <div
+    className="page-not-found"
+  />
 </div>
 `;

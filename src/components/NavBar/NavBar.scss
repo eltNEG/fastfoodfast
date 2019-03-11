@@ -18,7 +18,7 @@
 }
 
 .nav-bar + :not(.main) + .footer{
-    margin-top: 80vh;
+    margin-top: 84vh;
 }
 
 @include mobile {
@@ -34,6 +34,7 @@
       display: initial;
       .accordion.ui {
         position: relative;
+        overflow: hidden
       }
       a {
         color: $dark-blue;

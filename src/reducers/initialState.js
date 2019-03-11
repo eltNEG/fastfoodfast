@@ -15,6 +15,11 @@ const initialState = {
     fetched: false,
     loginIsLoading: false,
     registerIsLoading: false,
+  },
+  order: {
+    orderHistory: [],
+    orderHistoryIsLoading: false,
+    orderFetched: false
   }
 };
 

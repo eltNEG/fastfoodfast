@@ -1,0 +1,18 @@
+.page-not-found {
+    background: url('../../assets/images/Screenshot\ 2019-03-11\ at\ 5.41.32\ AM.png') no-repeat center;
+    background-size: cover;
+    height: 14rem;
+    width: 14rem;
+
+}
+
+.page-not-found-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    background-color: transparent;
+}
