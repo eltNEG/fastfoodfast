@@ -4,7 +4,8 @@ const initialState = {
   foods: {
     foodFetchState: FOOD_FETCH_STATES.notFetced,
     fetchFoodLoading: false,
-    foodItems: []
+    foodItems: [],
+    orderIsLoading: false
   },
   user: {
     userid: 0,

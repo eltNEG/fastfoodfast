@@ -4,6 +4,7 @@ import cardItems from '..';
 import items, {jwtToken, user} from '../../mocks';
 import {setToken, getToken, getUserFromLocalStorage, isUserAuthenticated} from '..'
 
+
 describe('helpers', () => {
   afterEach(() => {
     localStorage.clear();
@@ -13,7 +14,7 @@ describe('helpers', () => {
       const items = [{ key: 'value' }];
       const button = 'button';
       const expected = [{ key: 'value' }];
-      expect(cardItems(items, button)[0].extra).toBe('button');
+      expect(cardItems(items, ()=>{})[0].description ).toBe('Buy this now...');
     });
   });
   describe('setToken', () => {

@@ -1,0 +1,14 @@
+@import '../../styles/styles';
+
+.food-details > .content.title > .header {
+  border-bottom: 1px solid $dark-blue;
+}
+
+.food-details {
+  .content {
+    img.loading-img.img-not-loading {
+      width: 100%;
+      max-height: 15rem;
+    }
+  }
+}

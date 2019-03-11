@@ -6,7 +6,10 @@ const {
   FETCH_FOOD_FAILURE,
   FETCH_FOOD_LOADING,
   FETCH_FOOD_SUCCESS,
-  CHANGE_FOOD_FETCH_STATE
+  CHANGE_FOOD_FETCH_STATE,
+  ORDER_FAILURE,
+  ORDER_ISLOADING,
+  ORDER_SUCCESS
 } = actionTypes;
 
 const { foods } = initialState;
@@ -35,6 +38,21 @@ export default (state = foods, action) => {
       return {
         ...state,
         foodFetchState: action.payload
+      };
+    case ORDER_ISLOADING:
+      return {
+        ...state,
+        orderIsLoading: true
+      };
+    case ORDER_FAILURE:
+      return {
+        ...state,
+        orderIsLoading: false
+      };
+    case ORDER_SUCCESS:
+      return {
+        ...state,
+        orderIsLoading: false
       };
     default:
       return state;

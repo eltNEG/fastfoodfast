@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BuyNowBtn snapshot should match BuyNowBtn.jsx snapshot 1`] = `
-<button>
-  Buy Now
-</button>
+<Link
+  replace={false}
+  to="/checkout/-1"
+>
+  <button>
+    Buy Now
+  </button>
+</Link>
 `;
 
 exports[`HomeContent snapshot should match HomeContent.jsx snapshot 1`] = `
